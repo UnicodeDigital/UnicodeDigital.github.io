@@ -13,9 +13,10 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 import { getPermalink} from '../utils/permalinks';
+import { Image } from 'astro:assets';
 
 const metadata = {
-  title: 'Unicode Digital — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Unicode Digital',
   ignoreTitleTemplate: true,
 };
 ---
@@ -33,11 +34,12 @@ const metadata = {
       //   icon: 'tabler:download',
       // },
       { 
+        variant: 'primary',
         text: 'Learn more', 
-        href: getPermalink('/homes/startup'),
+        href: getPermalink('#about-us'),
       },
     ]}
-    image={{ src: '~/assets/images/hero-image-1.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/bitcoin.jpg', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       <span class="hidden xl:inline">Welcome to the conversation about the</span>
@@ -62,35 +64,31 @@ const metadata = {
 
   <Content
     isReversed
-    title="Who We Are?"
+    id="about-us"
+    title="Unicode Digital Blueprint: Web3 Innovation!"
+    tagline="Introduction"
     items={[
-      // {
-      //   title: 'Built on top of Astro 4.0',
-      //   description:
-      //     'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      // },
-      // {
-      //   title: 'Styled using Tailwind CSS',
-      //   description:
-      //     'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      // },
-      // {
-      //   title: 'Cross-browser compatibility',
-      //   description:
-      //     'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      // },
+      {
+        title: 'Quantative Cryptocurrency Hedge Fund',
+        description:
+          'Unicode Digital is a company specialising in quantitative crypto strategy, with a focus on in-depth exploration of Web3 technologies and cryptocurrency trading. Our goal is to enhance trading efficiency and quality through professional quantitative analysis and trading ability while minimizing trading risks as much as possible.',
+      },
+      {
+        title: 'Focus on Blockchain Technology itself',
+        description:
+          'In our blueprint for the future, blockchain will no longer be just a technology, but a key cornerstone for building a transparent, efficient and inclusive global ecosystem. Our team is working to lead this wave of change, working together to ensure that our fund is a benchmark for excellence.',
+      },
     ]}
     image={{
-      // src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      src: '~/assets/images/hero-image.png',
+      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      //src: '~/assets/images/hero-image.png',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"> <span class="hidden sm:inline">Empowering </span>  <span
-        class="text-accent dark:text-white highlight">Web3 Innovation </span
-      > for the Future </h3>
-      Unicode Digital is a company specialising in quantitative crypto arbitrage, with a focus on in-depth exploration of Web3 technologies and cryptocurrency trading. We are committed to exploring the fields of Web3, blockchain, and cryptocurrency field, formulating trading strategies through advanced quantitative techniques and algorithmic analysis, and executing trades with the help of blockchain technology. Our goal is to enhance trading efficiency and quality through professional quantitative analysis and trading ability while minimizing trading risks as much as possible.
+        class="text-accent dark:text-white highlight">Web3 Innovation </span> </h3>
+       We are committed to exploring the fields of Web3, blockchain, and cryptocurrency field, formulating trading strategies through advanced quantitative techniques and algorithmic analysis, and executing trades with the help of blockchain technology. 
     </Fragment>
 
     <Fragment slot="bg">
@@ -175,31 +173,29 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="What We Do?"
+    title="Our Main Focus",
+    tagline='Business',
     items={[
       {
-        title: '<span class="font-medium">Prop Trading</span>',
+        title: '<span class="font-medium">Proprietary Trading</span>',
         description:
           "Utilize the firm's capital to engage in prop shop, focusing on high-frequency trading opportunities within the cryptocurrency markets. Leverage trading strategies and market analysis to identify profitable opportunities and strive for significant financial gains.",
-        icon: 'tabler:package',
+        //icon: 'tabler:package',
+        icon: 'tabler:award',
       },
       {
         title: '<span class="font-medium">Strategic Investment</span>',
         description:
           "Utilize our quantitative analysis technology to identify promising innovative projects for investment, and drive the implementation and development of projects with our trading ability. ",
-        icon: 'tabler:letter-case',
+        icon: 'tabler:paint',
       },
       {
         title: '<span class="font-medium">On-Chain Trading and Arbitrage</span>',
         description:
           'Continuously monitor and analyze blockchain-based market conditions using advanced information technology and quantitative methods. Develop and execute on-chain trading strategies to enhance trade efficiency and quality while minimizing associated risks.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'We Are Leading The Innovation!',
-        description: 'In our blueprint for the future, blockchain will no longer be just a technology, but a key cornerstone for building a transparent, efficient and inclusive global ecosystem. Our team is working to lead this wave of change, working together to ensure that our fund is a benchmark for excellence.',
-        icon: 'tabler:check',
-      },
+        // icon: 'tabler:paint',
+        icon: 'tabler:package'
+      }
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
@@ -213,30 +209,32 @@ const metadata = {
     id="features"
     title="Research Report"
     subtitle="One of the most professional and comprehensive reports currently on the market."
+    tagline='Research',
     items={[
       {
         title: 'Market Insight',
         description:
-          'Summary of market.',
+          'We update market hot news and share insights.',
         icon: 'tabler:bulb',
       },
       {
         title: 'DeFi',
         description:
-          'Research into innovative and Defi products',
+          'Research into innovative and DeFi products.',
         icon: 'tabler:components',
       },
       {
         title: 'Metaverse',
         description:
-          'Focus on exploring Web3.0 and metaverse',
-        icon: 'tabler:list-check',
+          'Focus on exploring Web3.0 and metaverse.',
+        icon: 'tabler:flip-vertical',
       },
       {
         title: 'Fundamental analysis',
         description:
-          'Evaluation based on the basic characteristics of the assets',
-        icon: 'tabler:brand-tailwind',
+          'Analysis based on the basic characteristics of equity.',
+        //icon: 'tabler:brand-tailwind',
+        icon: 'tabler:message-star',
       },
       {
         title: 'Derivatives',
@@ -247,7 +245,7 @@ const metadata = {
       {
         title: 'Market pulse',
         description:
-          'Key market data indicators',
+          'Key market data impulse indicators.',
         icon: 'tabler:rocket',
       },
     ]}
@@ -256,43 +254,49 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Portofolio"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    title="Portofolio Showcase"
+    subtitle="Our portfolio showcases innovative decentralized finance (DeFi) solutions."
     tagline="Components"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Polkadot',
+        description: "Polkadot is a platform working on scalability within blockchain networks.",
         icon: 'flat-color-icons:template',
+        image: {src:"src/assets/images/defi/polkdot.png"}
       },
       {
-        title: 'Heros',
+        title: 'Chiliz',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          "Chiliz is a blockchain platform developed by Maltese-based sports company Mediarex.",
+        // icon: 'flat-color-icons:gallery',
+        image: {src:"src/assets/images/defi/chiliz.png"}
       },
       {
-        title: 'Features',
+        title: 'SSV Network',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+          'SSV is a secure and scalable staking infrastructure.',
+        // icon: 'flat-color-icons:approval',
+        image: {src:"src/assets/images/defi/ssv.png"}
       },
       {
-        title: 'Content',
+        title: 'Celer Network',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          "Celer is a blockchain interoperability protocol enabling a one-click user experience accessing multiple chains.",
+        // icon: 'flat-color-icons:document',
+        image: {src:"src/assets/images/defi/celer.jpg"}
       },
       {
-        title: 'Call-to-Action',
+        title: 'NYM',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'Nym redefines the boundaries of privacy and data security on the internet.',
+        // icon: 'flat-color-icons:advertising',
+        image: {src:"src/assets/images/defi/nym.png"}
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        title: 'iZUMi Finance',
+        description: 'A multi-chain DeFi protocol providing One-Stop Liquidity as a Service (LaaS).',
+        // icon: 'flat-color-icons:currency-exchange',
+        image: {src:"src/assets/images/defi/izumi.png"}
       },
       {
         title: 'Testimonial',

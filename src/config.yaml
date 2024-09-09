@@ -1,6 +1,6 @@
 site:
   name: Unicode Digital
-  site: 'https://astrowind.vercel.app'
+  site: 'https://unicodedigital.com'
   base: '/'
   trailingSlash: false
 
@@ -11,15 +11,15 @@ metadata:
   title:
     default: Unicode Digital
     template: '%s — Unicode Digital'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Crypto Hedge Fund"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Unicode Digital
     images:
-      - url: '~/assets/images/default.png'
-        width: 1200
+      - url: '~/assets/images/icon.png'
+        width: 600
         height: 628
     type: website
   twitter:

@@ -1,10 +1,12 @@
 ---
 title: 'Open Positions'
 layout: '~/layouts/MarkdownLayout.astro'
+
 ---
 
 _Last updated_: Sep 06, 2024
 
+![image](https://images.unsplash.com/photo-1473188588951-666fce8e7c68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1024&q=80&h=576)
 
 
 ## Operations
