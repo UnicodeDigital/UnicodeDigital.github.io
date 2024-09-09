@@ -1,6 +1,6 @@
 site:
   name: Unicode Digital
-  site: 'https://unicodedigital.com'
+  site: 'https://unicodedigital.github.io'
   base: '/'
   trailingSlash: false
 
