@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Unicode Digital
     images:
-      - url: '~/assets/images/icon.png'
+      - url: '~/src/assets/images/icon.png'
         width: 600
         height: 628
     type: website
