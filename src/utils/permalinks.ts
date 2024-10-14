@@ -47,7 +47,9 @@ export const getPermalink = (slug = '', type = 'page'): string => {
     slug.startsWith('http://') ||
     slug.startsWith('://') ||
     slug.startsWith('#') ||
-    slug.startsWith('javascript:')
+    slug.trim().toLowerCase().startsWith('javascript:') ||
+    slug.trim().toLowerCase().startsWith('data:') ||
+    slug.trim().toLowerCase().startsWith('vbscript:')
   ) {
     return slug;
   }
