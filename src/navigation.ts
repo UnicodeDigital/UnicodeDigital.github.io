@@ -174,7 +174,7 @@ export const footerData = {
     // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   // ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/nreiyf' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/UnicodeDigital' },
     { ariaLabel: 'linkedin', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/unicodedigital/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/UnicodeDigital' },
   ],
